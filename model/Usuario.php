@@ -11,7 +11,7 @@ class Usuario {
     private $conexion;
 
     public function __construct(){
-        $nombreServidor = 'LENOVO\SQLEXPRESS';
+        $nombreServidor = 'DESKTOP-CHKNDLF\SQLEXPRESS';
         $infoConexion = array('Database'=>'demo');
         $this->conexion = sqlsrv_connect($nombreServidor, $infoConexion);
     }

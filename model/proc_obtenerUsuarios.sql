@@ -1,3 +1,5 @@
+use demo
+go
 CREATE PROCEDURE obtenerUsuarios
 AS  
 BEGIN  

@@ -1,3 +1,4 @@
+use demo
 INSERT INTO Usuario (nombre, apellidos, nacimiento, ciudad_estado, usuario, correo, contrasena) 
 VALUES('Yenifer', 'Davis Lopez', '1996-07-23', 'Tampico Tamaulipas','YeniferLpz', 'theyeniindustries@gmail.com', 'KDKSAJDNFJHDJFHASKJDAKSJDASDA');
 INSERT INTO Usuario (nombre, apellidos, nacimiento, ciudad_estado, usuario, correo, contrasena) 

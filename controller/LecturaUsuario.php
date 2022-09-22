@@ -17,24 +17,25 @@ function leerUsuarios($filtro) {
     }
 
     // Recortar contraseña a 10 letras
-    for($i = 0; $i < count($infoUsuarios); $i++) {
-        $infoUsuarios[$i][7] = substr($infoUsuarios[$i][7], 0, 10).'...';
-    }
+    recorteContrasena($infoUsuarios);
 
     return $infoUsuarios;
 }
 
 function leerUsuario_porID($id) {
-    $infoUsuario;
     $usuario = new Usuario();
 
     $infoUsuario = $usuario->lecturaUsuarios('exec obtenerUsuario_porID '.$id);
     // Recortar contraseña a 10 letras
-    for($i = 0; $i < count($infoUsuario); $i++) {
-        $infoUsuario[$i][7] = substr($infoUsuario[$i][7], 0, 10).'...';
-    }
+    recorteContrasena($infoUsuario);
 
     return $infoUsuario;
+}
+
+function recorteContrasena($infoUsuarios){
+    for($i = 0; $i < count($infoUsuarios); $i++) {
+        $infoUsuarios[$i][7] = substr($infoUsuarios[$i][7], 0, 10).'...';
+    }
 }
 
 ?>

@@ -1,3 +1,5 @@
+use demo
+go
 CREATE PROC actualizarUsuario_porID
 	@id int,
 	@nombre varchar(35),

@@ -1,3 +1,5 @@
+use demo
+go
 CREATE PROC obtenerUsuario_porID
 	@id int
 AS
